@@ -1,0 +1,72 @@
+<div *ngIf = "book.volumeInfo.imageLinks" class="book"> 
+    <img src="{{book.volumeInfo.imageLinks.thumbnail}}" alt="">
+
+    <div>
+        
+        <label class="title"> Título: {{book.volumeInfo.title}}</label>
+        
+        
+        <br>
+        <br>
+        <b>Autor: {{book.volumeInfo.authors[0]}}</b>
+        <br>
+        
+        <br>
+        <label > Descrição: {{book.volumeInfo.description}}</label>
+    </div>
+
+    
+</div>
+
+
+
+<div class="external">
+
+        
+    <div class="div-prod">
+        <h1>Produto</h1>
+
+        <h3>Qual seu nível de satisfação com o produto?</h3>
+
+        <input type="text">
+
+        <h3>Você recomendaria esse produto para outra pessoa?</h3>
+
+        <input type="text">
+
+        <h3>Quais são suas sugestões para o produto?</h3>
+
+        <input type="text">
+
+        </div>
+    
+
+  
+
+    <div class="div-plat">
+        <h1>Plataforma</h1>
+
+        <h3>Como você qualifica sua experiância na plataforma?</h3>
+
+        <input type="text">
+
+        <h3>Quais são suas sugestões para o nosso Marketplace?</h3>
+
+        <input type="text">
+
+        <h3>Você recomendaria nosso site para amigos e familiares?</h3>
+
+        <input type="text">
+
+    </div>
+
+    
+    
+    
+</div>
+
+<p class="send-align">
+    <button class="send">Enviar</button>
+    
+</p>
+

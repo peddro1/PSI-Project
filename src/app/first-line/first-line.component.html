@@ -1,0 +1,103 @@
+
+
+<h1 class="title"> Rainha Vermelha</h1>
+
+<div class="grid" *ngIf = "books">
+    <section class="section-Book" id="section-Book" *ngFor = "let book of books1['items'];  let i=index " (click) = "goToDetails(book.id)">
+
+            <div *ngIf = "book.volumeInfo.imageLinks && i<5"> 
+                <img src="{{book.volumeInfo.imageLinks.thumbnail}}" alt="">
+            </div>
+            <div class="title-book" *ngIf = "book.volumeInfo.imageLinks && i<5">
+                <label >{{book.volumeInfo.title}}</label>
+                
+            </div>
+        
+    </section>
+
+</div>
+
+<hr>
+
+
+
+<h1 class="title">Stephen King</h1>
+
+<div class="grid" *ngIf = "books">
+    <section class="section-Book" id="section-Book" *ngFor = "let book of books2['items'];  let i=index " (click) = "goToDetails(book.id)">
+
+            <div *ngIf = "book.volumeInfo.imageLinks && i<5"> 
+                <img src="{{book.volumeInfo.imageLinks.thumbnail}}" alt="">
+            </div>
+            <div class="title-book" *ngIf = "book.volumeInfo.imageLinks && i<5">
+                <label >{{book.volumeInfo.title}}</label>
+                
+            </div>
+        
+    </section>
+
+</div>
+<hr>
+
+
+<h1 class="title">Netflix</h1>
+
+<div class="grid" *ngIf = "books">
+    <section class="section-Book" id="section-Book" *ngFor = "let book of books4['items'];  let i=index " (click) = "goToDetails(book.id)">
+
+            <div *ngIf = "book.volumeInfo.imageLinks && i<5"> 
+                <img src="{{book.volumeInfo.imageLinks.thumbnail}}" alt="">
+            </div>
+            <div class="title-book" *ngIf = "book.volumeInfo.imageLinks && i<5">
+                <label >{{book.volumeInfo.title}}</label>
+                
+            </div>
+        
+    </section>
+
+</div>
+
+<hr >
+
+
+
+<h1 class="title"> Game of Thrones</h1>
+<div class="grid" *ngIf = "books">
+    
+    <section class="section-Book" id="section-Book" *ngFor = "let book of books['items'] ; let i=index " (click) = "goToDetails(book.id)">
+
+            
+            <div *ngIf = "book.volumeInfo.imageLinks && i<5"> 
+                <img src="{{book.volumeInfo.imageLinks.thumbnail}}" alt="">
+            </div>
+            <div class="title-book" *ngIf = "book.volumeInfo.imageLinks && i<5">
+                <label >{{book.volumeInfo.title}}</label>
+                
+            </div>
+        
+    </section>
+
+</div>
+
+<hr>
+
+
+
+<h1 class="title">Maze Runner</h1>
+
+<div class="grid" *ngIf = "books">
+    <section class="section-Book" id="section-Book" *ngFor = "let book of books3['items'];  let i=index " (click) = "goToDetails(book.id)">
+
+            <div *ngIf = "book.volumeInfo.imageLinks && i<5"> 
+                <img src="{{book.volumeInfo.imageLinks.thumbnail}}" alt="">
+            </div>
+            <div class="title-book" *ngIf = "book.volumeInfo.imageLinks && i<5">
+                <label >{{book.volumeInfo.title}}</label>
+                
+            </div>
+        
+    </section>
+
+</div>
+
+<hr >
